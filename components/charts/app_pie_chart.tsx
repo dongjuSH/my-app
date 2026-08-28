@@ -34,10 +34,10 @@ const productData = [
 const totalValue = productData.reduce((total, item) => total + item.value, 0);
 
 // 차트 설정
-// Object.fromEntries : 배열 형태의 데이터를 객체로 바꿔주는 메서드
+// Object.fromEntries : [키, 값] 형태의 배열을 객체로 바꿔주는 메서드
 const chartConfig = Object.fromEntries(
   productData.map((item) => [
-    // productData를 다음 형태로 반환
+    // productData를 ChartConfig가 원하는 다음 형태로 반환(label, color 값이 배열에 있어 중복 작성하지 않기 위해 작성)
     item.name,
     {
       label: item.name,
