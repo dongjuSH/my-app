@@ -62,7 +62,7 @@ export default function AppPieChart() {
       </CardHeader>
 
       {/* 카드 내용 */}
-      <CardContent className="h-full px-4 flex items-center justify-between">
+      <CardContent className="h-full px-8 flex items-center justify-between">
         {/* 차트 */}
         <ChartContainer config={chartConfig} className="w-full max-w-70 aspect-square">
           <PieChart>

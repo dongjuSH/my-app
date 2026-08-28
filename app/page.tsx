@@ -16,7 +16,7 @@ export default function Home() {
       {/* sidebar */}
       <AppSidebar />
       <div className="w-full p-2">
-        <main className="bg-[#101211] border border-[#282b2a] rounded-xl flex flex-col">
+        <main className="w-full min-[1920px]:max-w-[1640px] min-[1920px]:mx-auto bg-[#101211] border border-[#282b2a] rounded-xl flex flex-col">
           {/* header */}
           <Header />
           <div className="p-4">
